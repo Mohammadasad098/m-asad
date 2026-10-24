@@ -467,7 +467,7 @@ function getAutoReplyTemplate(data) {
 // ============================================
 // SEND EMAIL ENDPOINT
 // ============================================
-app.post('/send-email', async (req, res) => {
+app.post(['/send-email', '/api/send-email'], async (req, res) => {
     try {
         const data = req.body;
         
@@ -527,7 +527,10 @@ app.post('/send-email', async (req, res) => {
     }
 });
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
-});
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`🚀 Server running on http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app;
