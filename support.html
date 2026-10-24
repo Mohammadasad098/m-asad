@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Support - Asad.dev</title>
+    <script src="assets/js/vendors/color-modes.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon-gradient.svg" />
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/aos.css" />
+    <link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+    <link rel="stylesheet" href="assets/fonts/satoshi/satoshi.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        :root {
+            --tc-theme-primary: rgb(0 100 178);
+            --tc-theme-primary-1: rgb(0 100 178);
+            --tc-theme-primary-2: rgb(0 100 178);
+            --tc-theme-primary-3: rgb(0 100 178);
+            --tc-theme-dark-primary-1: rgb(0 100 178);
+            --tc-theme-dark-primary-2: rgb(0 100 178);
+            --tc-theme-dark-primary-3: rgb(0 100 178);
+            --tc-theme-secondary: rgb(0 75 135);
+            --tc-neutral-300: #9CA3AF;
+        }
+        
+        .text-primary-2 { color: rgb(0 100 178) !important; }
+        
+        .btn-primary-2 {
+            background: linear-gradient(135deg, rgb(0 100 178), rgb(0 75 135)) !important;
+            border: none !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-primary-2:hover {
+            background: linear-gradient(135deg, rgb(0 75 135), rgb(0 59 105)) !important;
+        }
+        
+        .text-linear-4 {
+            background: linear-gradient(135deg, rgb(0 75 135), rgb(0 100 178), rgb(77 159 224));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .fill-primary-2 { fill: rgb(0 100 178) !important; }
+        .nav-link:hover { color: rgb(0 100 178) !important; }
+        .nav-link.active { color: rgb(0 100 178) !important; }
+        .link-hover:hover { color: rgb(0 100 178) !important; }
+        .navbar .navbar-social a,
+        .navbar .navbar-social a i { color: #ffffff !important; }
+        .navbar .navbar-social a:hover,
+        .navbar .navbar-social a:hover i { color: rgb(0 100 178) !important; }
+        
+        /* ============================================
+           SUPPORT PAGE SPECIFIC STYLES
+           ============================================ */
+        .support-faq .accordion-button {
+            background: transparent;
+            color: inherit;
+            box-shadow: none;
+        }
+
+        .support-faq .accordion-button:not(.collapsed) {
+            color: rgb(0 100 178) !important;
+            background: transparent;
+        }
+
+        .support-faq .accordion-item {
+            background: transparent;
+            border-color: rgb(0 100 178 / 20%) !important;
+        }
+
+        .support-faq .accordion-body {
+            color: var(--tc-neutral-300, #9CA3AF);
+            line-height: 1.7;
+        }
+
+        .support-faq .accordion-body a {
+            color: rgb(0 100 178);
+        }
+
+        .support-faq .accordion-body a:hover {
+            color: rgb(0 75 135);
+        }
+
+        .support-faq .accordion-body .text-dark {
+            color: #ffffff !important;
+        }
+
+        [data-bs-theme="light"] .support-faq .accordion-body .text-dark {
+            color: #1F1F24 !important;
+        }
+
+        .support-card p {
+            color: var(--tc-neutral-300, #9CA3AF);
+            line-height: 1.7;
+        }
+
+        .support-card a {
+            color: rgb(0 100 178) !important;
+        }
+
+        .support-card a:hover {
+            color: rgb(0 75 135) !important;
+        }
+
+        .support-card h6 {
+            color: #ffffff;
+        }
+
+        [data-bs-theme="light"] .support-card h6 {
+            color: #1F1F24;
+        }
+
+        .support-card .fs-7 {
+            color: var(--tc-neutral-300, #9CA3AF);
+        }
+
+        [data-bs-theme="light"] .support-card .fs-7 {
+            color: #4a4a4a;
+        }
+
+        .card-servies-2 {
+            border: 1px solid rgb(0 100 178 / 20%) !important;
+            transition: all 0.3s ease;
+        }
+
+        .card-servies-2:hover {
+            border-color: rgb(0 100 178 / 60%) !important;
+            box-shadow: 0 0 20px rgb(0 100 178 / 15%) !important;
+        }
+
+        [data-bs-theme="light"] .card-servies-2 {
+            background: #EFF6FC !important;
+            border-color: rgb(0 100 178 / 15%) !important;
+        }
+
+        [data-bs-theme="light"] .card-servies-2:hover {
+            border-color: rgb(0 100 178) !important;
+            box-shadow: 0 0 20px rgb(0 100 178 / 10%) !important;
+        }
+
+        /* ============================================
+           SECTION HERO - Same as Privacy Page
+           ============================================ */
+        .section-hero-2 .border {
+            border-color: rgb(0 100 178 / 30%) !important;
+        }
+
+        [data-bs-theme="light"] .section-hero-2 .border {
+            border-color: rgb(0 100 178 / 20%) !important;
+        }
+
+        .section-hero-2 h1 {
+            color: #ffffff;
+        }
+
+        [data-bs-theme="light"] .section-hero-2 h1 {
+            color: #1F1F24;
+        }
+
+        .section-hero-2 .text-300 {
+            color: var(--tc-neutral-300, #9CA3AF);
+        }
+
+        [data-bs-theme="light"] .section-hero-2 .text-300 {
+            color: #4a4a4a;
+        }
+
+        /* ============================================
+           BOX LINEAR ANIMATION - Same as Privacy
+           ============================================ */
+        .box-linear-animation {
+            background: linear-gradient(180deg, rgb(0 100 178 / 5%) 0%, rgba(0, 0, 0, 0) 100%) !important;
+        }
+
+        [data-bs-theme="light"] .box-linear-animation {
+            background: linear-gradient(180deg, rgb(0 100 178 / 8%) 0%, rgba(255, 255, 255, 0) 100%) !important;
+        }
+
+        /* ============================================
+           BORDER COLORS - Same as Privacy
+           ============================================ */
+        .border {
+            border-color: rgb(0 100 178 / 30%) !important;
+        }
+
+        .border-1 {
+            border-color: rgb(0 100 178 / 30%) !important;
+        }
+
+        .border-top {
+            border-color: rgb(0 100 178 / 30%) !important;
+        }
+
+        .border-bottom {
+            border-color: rgb(0 100 178 / 20%) !important;
+        }
+
+        [data-bs-theme="light"] .border,
+        [data-bs-theme="light"] .border-1,
+        [data-bs-theme="light"] .border-top {
+            border-color: rgb(0 100 178 / 20%) !important;
+        }
+
+        [data-bs-theme="light"] .border-bottom {
+            border-color: rgb(0 100 178 / 15%) !important;
+        }
+
+        /* ============================================
+           NAVBAR - Same as Privacy
+           ============================================ */
+        .navbar-home-2 {
+            border-color: rgb(0 100 178 / 30%) !important;
+        }
+
+        [data-bs-theme="light"] .navbar-home-2 {
+            border-color: rgb(0 100 178 / 20%) !important;
+        }
+
+        .navbar-home-2 .nav-link {
+            color: var(--tc-neutral-300, #9CA3AF);
+        }
+
+        .navbar-home-2 .nav-link:hover,
+        .navbar-home-2 .nav-link.active {
+            color: rgb(0 100 178) !important;
+        }
+
+        /* ============================================
+           OFF CANVAS - Same as Privacy
+           ============================================ */
+        .offCanvas__info {
+            background: #0a0a0a !important;
+            border-left: 1px solid rgb(0 100 178 / 30%) !important;
+        }
+
+        [data-bs-theme="light"] .offCanvas__info {
+            background: #ffffff !important;
+            border-left: 1px solid rgb(0 100 178 / 20%) !important;
+        }
+
+        .offCanvas__info .text-200 {
+            color: var(--tc-neutral-300, #9CA3AF);
+        }
+
+        [data-bs-theme="light"] .offCanvas__info .text-200 {
+            color: #4a4a4a;
+        }
+
+        .offCanvas__info h3,
+        .offCanvas__info .text-400,
+        .offCanvas__info .contact-list p {
+            color: #ffffff;
+        }
+
+        [data-bs-theme="light"] .offCanvas__info h3,
+        [data-bs-theme="light"] .offCanvas__info .text-400,
+        [data-bs-theme="light"] .offCanvas__info .contact-list p {
+            color: #1F1F24;
+        }
+
+        /* ============================================
+           MOBILE HEADER - Same as Privacy
+           ============================================ */
+        .mobile-header-wrapper-style {
+            background: #0a0a0a !important;
+        }
+
+        [data-bs-theme="light"] .mobile-header-wrapper-style {
+            background: #ffffff !important;
+        }
+
+        .mobile-header-wrapper-style .text-dark {
+            color: #ffffff !important;
+        }
+
+        [data-bs-theme="light"] .mobile-header-wrapper-style .text-dark {
+            color: #1F1F24 !important;
+        }
+
+        .mobile-header-wrapper-style .nav-link {
+            color: var(--tc-neutral-300, #9CA3AF);
+        }
+
+        [data-bs-theme="light"] .mobile-header-wrapper-style .nav-link {
+            color: #4a4a4a;
+        }
+
+        /* ============================================
+           SOCIAL ICONS - Same as Privacy
+           ============================================ */
+        .navbar-social a,
+        footer .d-flex a,
+        .offCanvas__info .d-flex a {
+            color: var(--tc-neutral-300, #9CA3AF);
+            transition: color 0.3s ease;
+        }
+
+        [data-bs-theme="light"] .navbar-social a,
+        [data-bs-theme="light"] footer .d-flex a,
+        [data-bs-theme="light"] .offCanvas__info .d-flex a {
+            color: #4a4a4a;
+        }
+
+        .navbar-social a:hover,
+        footer .d-flex a:hover,
+        .offCanvas__info .d-flex a:hover {
+            color: rgb(0 100 178) !important;
+        }
+
+        /* ============================================
+           BURGER ICON - Same as Privacy
+           ============================================ */
+        .burger-icon-white span {
+            background-color: var(--tc-neutral-300, #9CA3AF);
+        }
+
+        [data-bs-theme="light"] .burger-icon-white span {
+            background-color: #4a4a4a;
+        }
+
+        /* ============================================
+           FOOTER - Same as Privacy
+           ============================================ */
+       
+
+        [data-bs-theme="light"] footer {
+            background: #f8f9fa !important;
+        }
+
+        footer .main-logo span,
+        footer .text-300,
+        footer .navigation a {
+            color: var(--tc-neutral-300, #9CA3AF);
+        }
+
+        [data-bs-theme="light"] footer .main-logo span,
+        [data-bs-theme="light"] footer .text-300,
+        [data-bs-theme="light"] footer .navigation a {
+            color: #4a4a4a;
+        }
+
+        footer .navigation a:hover {
+            color: rgb(0 100 178) !important;
+        }
+
+        footer .text-primary-2 {
+            color: rgb(0 100 178) !important;
+        }
+
+        /* ============================================
+           BODY - Same as Privacy
+           ============================================ */
+       
+
+        [data-bs-theme="light"] body {
+            background-color: #ffffff !important;
+        }
+
+        /* ============================================
+           DARK/LIGHT SWITCHER - Same as Privacy
+           ============================================ */
+        .dark-light-switcher .ri-sun-fill {
+            color: #FFD700 !important;
+        }
+
+        .dark-light-switcher .ri-contrast-2-line {
+            color: var(--tc-neutral-300, #9CA3AF);
+        }
+
+        [data-bs-theme="light"] .dark-light-switcher .ri-contrast-2-line {
+            color: #4a4a4a;
+        }
+
+        /* ============================================
+           SCROLL BUTTON - Same as Privacy
+           ============================================ */
+        .btn-scroll-top path {
+            stroke: rgb(0 100 178) !important;
+        }
+
+        /* ============================================
+           RESPONSIVE - Same as Privacy
+           ============================================ */
+        @media (max-width: 768px) {
+            .offCanvas__info {
+                background: #0a0a0a !important;
+            }
+            
+            [data-bs-theme="light"] .offCanvas__info {
+                background: #ffffff !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="home-page-2">
+    <div id="preloader">
+        <div class="loader-cover">
+            <div class="loader-container">
+                <div class="loader-icon-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container position-relative">
+            <div class="position-relative">
+                <nav class="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
+                    <a href="#"
+                        class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex"
+                        data-bs-target=".offCanvas__info" aria-controls="offCanvas__info">
+                        <i class="ri-menu-2-line"></i>
+                    </a>
+                    <div class="container py-3 px-4">
+                        <a class="navbar-brand d-flex main-logo align-items-center" href="index-2.html">
+                            <img src="assets/imgs/home-page-2/template/favicon_red.svg" alt="Asad" />
+                            <span class="fs-4 ms-2">Asad</span>
+                        </a>
+                        <div class="d-none d-lg-flex">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item"><a class="nav-link" href="index-2.html#about">About me</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="index-2.html#resume">Resume</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="index-2.html#services">Services</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="index-2.html#portfolio">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="index-2.html#skills">Skills</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="index-2.html#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                            <div class="d-md-flex d-none gap-3">
+                                <a href="https://www.linkedin.com/in/asadullahsheikh"><i
+                                        class="ri-linkedin-fill fs-18"></i></a>
+                                <a href="https://github.com/Mohammadasad098"><i class="ri-github-fill fs-18"></i></a>
+                            </div>
+                            <div class="burger-icon burger-icon-white border rounded-3">
+                                <span class="burger-icon-top"></span>
+                                <span class="burger-icon-mid"></span>
+                                <span class="burger-icon-bottom"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="dark-light-switcher pe-10 pe-lg-0 pe-0 ps-md-5 ps-0 ps-lg-4 pe-lg-4 d-flex justify-content-center align-items-center icon_80">
+                        <i class="ri-sun-fill text-warning"></i>
+                        <i class="ri-contrast-2-line text-white"></i>
+                    </div>
+                </nav>
+            </div>
+            <div class="offCanvas__info style-2">
+                <div class="offCanvas__close-icon menu-close">
+                    <button><i class="ri-close-line"></i></button>
+                </div>
+                <div class="offCanvas__logo mb-5">
+                    <h3 class="mb-0">Get in touch</h3>
+                </div>
+                <div class="offCanvas__side-info mb-30">
+                    <div class="contact-list mb-30">
+                        <p class="fs-6 fw-medium text-200 mb-5">I'm always excited to take on new projects and
+                            collaborate with innovative minds.</p>
+                        <div class="mb-3">
+                            <span class="text-400 fs-5">Phone Number</span>
+                            <p class="mb-0">+923112998095</p>
+                        </div>
+                        <div class="mb-3">
+                            <span class="text-400 fs-5">Email</span>
+                            <p class="mb-0">mohammadasadiam64@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-list">
+                        <p class="text-400 fs-5 mb-2">Social</p>
+                        <div class="d-md-flex d-none gap-3">
+                            <a href="https://www.linkedin.com/in/asadullahsheikh"><i
+                                    class="ri-linkedin-fill fs-18"></i></a>
+                            <a href="https://github.com/Mohammadasad098"><i class="ri-github-fill fs-18"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offCanvas__overly"></div>
+        <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+            <div class="mobile-header-wrapper-inner">
+                <div class="mobile-header-logo">
+                    <a class="d-flex main-logo align-items-center d-inline-flex" href="index-2.html">
+                        <img src="assets/imgs/home-page-2/template/favicon_red.svg" alt="Asad" />
+                        <span class="fs-4 ms-2 text-dark">Asad</span>
+                    </a>
+                    <div class="burger-icon burger-icon-white border rounded-3">
+                        <span class="burger-icon-top"></span>
+                        <span class="burger-icon-mid"></span>
+                        <span class="burger-icon-bottom"></span>
+                    </div>
+                </div>
+                <div class="mobile-header-content-area">
+                    <div class="perfect-scroll">
+                        <div class="mobile-menu-wrap mobile-header-border">
+                            <nav>
+                                <ul class="mobile-menu font-heading ps-0">
+                                    <li class="nav-item"><a class="nav-link" href="index-2.html#about">About me</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="index-2.html#resume">Resume</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="index-2.html#services">Services</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="index-2.html#portfolio">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="index-2.html#skills">Skills</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="index-2.html#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-hero-2 position-relative pt-130 pb-3">
+            <div class="container">
+                <div class="border border-1 rounded-3">
+                    <div class="box-linear-animation position-relative z-1 p-lg-5 p-md-4 p-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <svg class="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width="5" height="6"
+                                viewBox="0 0 5 6" fill="none">
+                                <circle cx="2.5" cy="3" r="2.5" fill="#0064B2" />
+                            </svg>
+                            <span class="text-linear-4 d-flex align-items-center"> Help Center </span>
+                        </div>
+                        <h1 class="fs-50 my-3">Support <span class="text-linear-4">&amp; FAQ</span></h1>
+                        <p class="text-300 mb-4">Need help with a project inquiry, collaboration, or something on this
+                            site? Find answers below or get in touch directly.</p>
+                        <a href="index-2.html#contact" class="btn btn-primary-2 rounded-2">
+                            Contact me
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-4 pb-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-servies-2 rounded-2 h-100 hover-up support-card p-4">
+                            <i class="ri-mail-fill text-primary-2 fs-24"></i>
+                            <h6 class="my-3 fw-medium">Email support</h6>
+                            <p class="fs-7 fw-regular mb-3">For project quotes, freelance work, or general questions,
+                                email me and I'll respond within 1–2 business days.</p>
+                            <a href="mailto:mohammadasadiam64@gmail.com" class="text-primary-2 fs-7">mohammadasadiam64@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-servies-2 rounded-2 h-100 hover-up support-card p-4">
+                            <i class="ri-phone-fill text-primary-2 fs-24"></i>
+                            <h6 class="my-3 fw-medium">Phone</h6>
+                            <p class="fs-7 fw-regular mb-3">Available for scheduled calls regarding web &amp; app
+                                development, APIs, or ongoing client work.</p>
+                            <a href="tel:+923112998095" class="text-primary-2 fs-7">+923112998095</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card-servies-2 rounded-2 h-100 hover-up support-card p-4">
+                            <i class="ri-linkedin-fill text-primary-2 fs-24"></i>
+                            <h6 class="my-3 fw-medium">Professional networks</h6>
+                            <p class="fs-7 fw-regular mb-3">Connect on LinkedIn or GitHub to view my experience,
+                                portfolio projects, and open-source work.</p>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="https://www.linkedin.com/in/asadullahsheikh" class="text-primary-2 fs-7">LinkedIn</a>
+                                <a href="https://github.com/Mohammadasad098" class="text-primary-2 fs-7">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-60">
+            <div class="container">
+                <div class="rounded-3 border border-1 position-relative overflow-hidden">
+                    <div class="box-linear-animation position-relative z-1 p-lg-5 p-md-4 p-3">
+                        <div class="d-flex align-items-center mb-4">
+                            <svg class="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width="5" height="6"
+                                viewBox="0 0 5 6" fill="none">
+                                <circle cx="2.5" cy="3" r="2.5" fill="#0064B2" />
+                            </svg>
+                            <span class="text-linear-4"> Frequently asked questions </span>
+                        </div>
+                        <div class="accordion support-faq" id="supportFaq">
+                            <div class="accordion-item border-0 border-bottom rounded-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-medium" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        What services do you offer?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#supportFaq">
+                                    <div class="accordion-body">
+                                        I specialize in modern web and mobile development using <span
+                                            class="text-secondary-2">Next.js</span>, <span
+                                            class="text-secondary-2">React Native</span>, <span
+                                            class="text-secondary-2">TypeScript</span>, and <span
+                                            class="text-secondary-2">Node.js</span>, along with Python APIs, cloud
+                                        platforms, payment integrations, and AI tools. See the
+                                        <a href="index-2.html#services">Services</a> section for full details.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 border-bottom rounded-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-medium" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        How do I start a new project with you?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#supportFaq">
+                                    <div class="accordion-body">
+                                        Send a brief overview of your idea via the <a
+                                            href="index-2.html#contact">contact form</a> or email. Include your timeline,
+                                        budget range (if any), and whether you need frontend, backend, or full-stack work. I'll
+                                        reply with next steps and availability.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 border-bottom rounded-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-medium" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        What is your typical response time?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#supportFaq">
+                                    <div class="accordion-body">
+                                        I aim to respond to new inquiries within 24–48 hours on business days. Active
+                                        client projects receive priority support based on our agreed communication
+                                        channels.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 border-bottom rounded-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-medium" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        Can I download your resume from this site?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#supportFaq">
+                                    <div class="accordion-body">
+                                        Yes. Visit the <a href="index-2.html#about">About</a> section on the homepage
+                                        and use the <strong class="text-dark">Download my CV</strong> button, or go
+                                        directly to the <a href="index-2.html#resume">Resume</a> section for experience
+                                        and education details.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 border-bottom rounded-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-medium" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq5">
+                                        Why do GitHub repositories sometimes fail to load?
+                                    </button>
+                                </h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#supportFaq">
+                                    <div class="accordion-body">
+                                        The portfolio fetches public repos from the GitHub API. If you see an error
+                                        message, it may be due to rate limits, network issues, or temporary GitHub
+                                        downtime. Refresh the page or visit my <a
+                                            href="https://github.com/Mohammadasad098">GitHub profile</a> directly.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 rounded-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-medium" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq6">
+                                        Where can I read about data and privacy?
+                                    </button>
+                                </h2>
+                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#supportFaq">
+                                    <div class="accordion-body">
+                                        See the <a href="privacy-policy.html">Privacy Policy</a> for how contact form
+                                        data, cookies, and third-party links are handled on this site.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="section-footer-2 position-relative">
+            <div class="container position-relative z-1 border-top border-1 pb-2 pt-4">
+                <div class="text-center">
+                    <a class="d-flex main-logo align-items-center justify-content-center mb-3" href="index-2.html">
+                        <img src="assets/imgs/home-page-2/template/favicon_red.svg" alt="Asad" />
+                        <span class="fs-4 ms-2">Muhammad Asad</span>
+                    </a>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="https://www.linkedin.com/in/asadullahsheikh"><i class="ri-linkedin-fill fs-18"></i></a>
+                        <a href="https://github.com/Mohammadasad098"><i class="ri-github-fill fs-18"></i></a>
+                    </div>
+                    <div class="navigation d-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
+                        <a href="index-2.html#about" class="fs-6"> About me </a>
+                        <a href="index-2.html#resume" class="fs-6"> Resume </a>
+                        <a href="index-2.html#services" class="fs-6"> Services </a>
+                        <a href="index-2.html#portfolio" class="fs-6"> Portfolio </a>
+                        <a href="index-2.html#skills" class="fs-6"> Skills </a>
+                        <a href="index-2.html#contact" class="fs-6"> Contact </a>
+                        <a href="privacy-policy.html" class="fs-6"> Privacy Policy </a>
+                        <a href="support.html" class="fs-6"> Support </a>
+                    </div>
+                    <p class="text-300 fs-7 mb-0">&copy; 2026 <a href="index-2.html" class="text-300 link-hover">Muhammad Asad</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="btn-scroll-top style-btn-2">
+        <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+            <path
+                d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+        </svg>
+    </div>
+
+    <script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendors/aos.js"></script>
+    <script src="assets/js/vendors/wow.min.js"></script>
+    <script src="assets/js/vendors/smart-stick-nav.js"></script>
+    <script src="assets/js/vendors/gsap.min.js"></script>
+    <script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vendors/gsap-custom.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
